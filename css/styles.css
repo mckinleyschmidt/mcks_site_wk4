@@ -1,0 +1,111 @@
+body{
+	background: url("../images/site_bg2.png");
+	font-family: "Roboto Mono";
+	margin-top: 5%;
+}
+
+nav{
+	display: block;
+	text-align: center;
+	font-size: 140%;
+	margin-top: 30px;
+}
+
+nav li{
+	display: inline;
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+nav a{
+	text-decoration: none;
+	color: #d60024;
+}
+
+h1, h2, h3{
+	text-align: center;
+	padding: 80px;
+}
+
+main{
+	margin: 10%;
+	margin-top: 0;
+}
+
+span{
+	padding: 40px;
+	color: #af001d;
+	background-image: radial-gradient(#ffffff, #fffcfc, transparent);
+}
+
+footer{
+	background-color: #d60024;
+	padding: 15px;
+	font-size: 50%;
+	color: #ffffff;
+	text-align: center;
+}
+
+a.skip-to-main{
+	top: -500px;
+	left:-1000px;
+    position:absolute;
+}
+
+a.skip-to-main:focus{
+	left: 2%;
+    top: 0;
+    margin-top: 10%;
+    padding: 5px;
+    border:4px solid red;
+    color: #ffffff;
+    text-decoration: none;
+    background-color:#000000;
+}
+
+.active{
+	background-color: #d60024;
+	color: #ffffff;
+	padding:10px;
+}
+
+.main-txt, ol{
+	padding: 60px;
+	color: #af001d;
+	font-size: 75%;
+	word-wrap: break-word;
+	background-image: radial-gradient(#ffffff, #ffffff, #fffcfc, transparent);
+}
+
+.fp-img{
+	display: block;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20%;
+	width: 20%;
+}
+
+.group-pic, .types{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gallery, .mckclown{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery img{
+	height:25%;
+	width: 25%;
+	padding: 2px;
+}
+
+.mckclown img{
+	height: 49%;
+	width: 49%;
+	padding: 2px;
+}
