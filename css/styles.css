@@ -1,5 +1,12 @@
+html{
+	height: 100%;
+}
+
 body{
-	background: url("../images/site_bg2.png");
+	height: 97%;
+	display: flex;
+	flex-direction: column;
+	background: url("../images/site_bg4_pink.png");
 	font-family: "Roboto Mono";
 	margin-top: 5%;
 }
@@ -14,7 +21,7 @@ nav{
 nav li{
 	display: inline;
 	padding: 10px;
-	background-color: #ffffff;
+	background-color: #fff5f5;
 }
 
 nav a{
@@ -28,19 +35,28 @@ h1, h2, h3{
 }
 
 main{
+	flex: 1 0 auto;
 	margin: 10%;
 	margin-top: 0;
 }
 
+main p, ol{
+	padding: 80px;
+	color: #d60024;
+	font-size: 75%;
+	word-wrap: break-word;
+	background-image: radial-gradient(#ffffff, #ffffff, #ffffff, #fff5f5, transparent);
+}
+
 span{
 	padding: 40px;
-	color: #af001d;
-	background-image: radial-gradient(#ffffff, #fffcfc, transparent);
+	color: #d60024;
+	background-image: radial-gradient(#ffffff, #ffffff, #fff5f5, transparent);
 }
 
 footer{
 	background-color: #d60024;
-	padding: 15px;
+	padding: 2%;
 	font-size: 50%;
 	color: #ffffff;
 	text-align: center;
@@ -67,14 +83,6 @@ a.skip-to-main:focus{
 	background-color: #d60024;
 	color: #ffffff;
 	padding:10px;
-}
-
-.main-txt, ol{
-	padding: 60px;
-	color: #af001d;
-	font-size: 75%;
-	word-wrap: break-word;
-	background-image: radial-gradient(#ffffff, #ffffff, #fffcfc, transparent);
 }
 
 .fp-img{
