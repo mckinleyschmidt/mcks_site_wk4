@@ -3,25 +3,23 @@ html{
 }
 
 body{
-	height: 97%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	background: url("../images/site_bg4_pink.png");
 	font-family: "Roboto Mono";
-	margin-top: 5%;
 }
 
 nav{
 	display: block;
 	text-align: center;
 	font-size: 140%;
-	margin-top: 30px;
 }
 
 nav li{
-	display: inline;
 	padding: 10px;
 	background-color: #fff5f5;
+	border-bottom: solid #d60024;
 }
 
 nav a{
@@ -31,21 +29,7 @@ nav a{
 
 h1, h2, h3{
 	text-align: center;
-	padding: 80px;
-}
-
-main{
-	flex: 1 0 auto;
-	margin: 10%;
-	margin-top: 0;
-}
-
-main p, ol{
-	padding: 80px;
-	color: #d60024;
-	font-size: 75%;
-	word-wrap: break-word;
-	background-image: radial-gradient(#ffffff, #ffffff, #ffffff, #fff5f5, transparent);
+	padding: 50px;
 }
 
 span{
@@ -54,10 +38,27 @@ span{
 	background-image: radial-gradient(#ffffff, #ffffff, #fff5f5, transparent);
 }
 
+main{
+	margin-bottom: auto;
+}
+
+main p, ol{
+	padding: 60px 40px;
+	color: #d60024;
+	text-align: center;
+	font-size: 90%;
+	word-wrap: break-word;
+	background-image: radial-gradient(#ffffff, #ffffff, #ffffff, #fff5f5, transparent);
+}
+
+ol{
+	text-align: left;
+}
+
 footer{
 	background-color: #d60024;
-	padding: 2%;
-	font-size: 50%;
+	padding: 1%;
+	font-size: 70%;
 	color: #ffffff;
 	text-align: center;
 }
@@ -71,7 +72,7 @@ a.skip-to-main{
 a.skip-to-main:focus{
 	left: 2%;
     top: 0;
-    margin-top: 10%;
+    margin-top: 50%;
     padding: 5px;
     border:4px solid red;
     color: #ffffff;
@@ -82,12 +83,10 @@ a.skip-to-main:focus{
 .active{
 	background-color: #d60024;
 	color: #ffffff;
-	padding:10px;
 }
 
 .fp-img{
 	display: block;
-	padding: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 20%;
@@ -96,6 +95,8 @@ a.skip-to-main:focus{
 
 .group-pic, .types{
 	display: block;
+	height: 80%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -104,16 +105,140 @@ a.skip-to-main:focus{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 5%;
 }
 
 .gallery img{
-	height:25%;
-	width: 25%;
+	height: 40%;
+	width: 40%;
 	padding: 2px;
 }
 
 .mckclown img{
-	height: 49%;
-	width: 49%;
+	height: 80%;
+	width: 80%;
 	padding: 2px;
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+
+@media only screen and (min-width: 768px) {
+	nav{
+		font-size: 100%;
+		margin-top: 30px;
+	}
+
+	nav li{
+		display: inline;
+		border-bottom: none;
+	}
+
+	h1, h2, h3{
+		font-size: 150%;
+		padding: 10%;
+	}
+
+	span{
+		padding: 50px;
+	}
+
+	main{
+		margin: 0 5% auto;
+	}
+
+	main p, ol{
+		font-size: 90%;
+	}
+
+	section{
+		display: flex;
+		align-items: center;
+	}
+
+	a.skip-to-main:focus{
+    	margin-top: 10%;
+	}
+
+	.fp-img{
+		padding: 10%;
+	}
+
+	.types{
+		width: 40%;
+	}
+
+	.group-pic{
+		height: 90%;
+		width: 90%;
+	}
+
+	.gallery img{
+		height:30%;
+		width: 30%;
+		padding: 2px;
+	}
+
+	.mckclown img{
+		height: 49%;
+		width: 49%;
+		padding: 2px;
+	}
+
+}
+
+/*/////////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width: 1024px) {
+	nav{
+		font-size: 150%;
+	}
+
+	h1, h2, h3{
+		font-size: 200%;
+	}
+
+	main{
+		margin: 0 5% auto;
+	}
+	main p, ol{
+		font-size: 80%;
+		margin: 1%;
+	}
+
+	section{
+		display: flex;
+		align-items: center;
+	}
+
+	a.skip-to-main:focus{
+    	margin-top: 10%;
+	}
+
+	.fp-img{
+		padding: 10%;
+	}
+
+	.types{
+		width: 40%;
+	}
+
+	.group-pic{
+		display: block;
+		height: 90%;
+		width: 90%;
+	}
+
+	.gallery img{
+		height:30%;
+		width: 30%;
+		padding: 2px;
+	}
+
+	.mckclown img{
+		height: 49%;
+		width: 49%;
+		padding: 2px;
+	}
+	
 }
