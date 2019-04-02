@@ -192,14 +192,15 @@ a.skip-to-main:focus{
 	}
 
 	h1, h2, h3{
-		font-size: 200%;
+		font-size: 100%;
+		padding: 7%;
 	}
 
 	main{
 		margin: 0 5% auto;
 	}
 	main p, ol{
-		font-size: 100%;
+		font-size: 80%;
 	}
 
 	section{
